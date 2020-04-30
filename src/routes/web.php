@@ -17,3 +17,7 @@ Route::get('/folders/tasks/hoge', 'TaskController@hoge')->name('tasks.hoge');
 // create folcers
 Route::get('/folders/create', 'FolderController@showCreateForm')->name('folders.create');
 Route::post('/folders/create', 'FolderController@create');
+
+// create tasks
+Route::get('/folders/{id}/tasks/create', 'TaskController@showCreateForm')->name('tasks.create');
+Route::post('/folders/{id}/tasks/create', 'TaskController@create');
