@@ -1,3 +1,5 @@
 /logs
 my.sh
 /dblog
+/src/config/database.php.test
+phptest.sh
